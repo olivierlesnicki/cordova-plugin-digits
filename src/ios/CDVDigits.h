@@ -1,6 +1,6 @@
 #import <Cordova/CDV.h>
 
-@interface Digits : CDVPlugin
+@interface CDVDigits : CDVPlugin
 
 - (void)login:(CDVInvokedUrlCommand*)command;
 
