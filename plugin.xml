@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.olivierlesnicki.cordova.digits" version="0.2.3">
+  <name>Device</name>
+  <description>Cordova Digits Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,digits</keywords>
+  <js-module src="www/digits.js" name="digits">
+    <clobbers target="digits" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Digits">
+        <param name="ios-package" value="CDVDigits" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/CDVDigits.h" />
+    <source-file src="src/ios/CDVDigits.m" />
+  </platform>
+
+</plugin>
